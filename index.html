@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algodão da Ju Oficial</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; margin:0; padding:0; color:#333; }
+    header { background:#F2C1D1; padding:1rem; text-align:center; position:sticky; top:0; z-index:10; }
+    header h1 { margin:0; color:#fff; display:inline-block; }
+    nav { display:inline-block; margin-left:2rem; }
+    nav a { margin:0 0.5rem; color:#fff; text-decoration:none; font-weight:700; }
+    .lang-switch { float:right; }
+    .lang-switch button { margin-left:0.5rem; padding:0.25rem 0.5rem; background:#fff; border:none; border-radius:4px; cursor:pointer; }
+    .container { max-width:960px; margin:2rem auto; padding:0 1rem; }
+    h2 { border-bottom:2px solid #F2C1D1; padding-bottom:0.5rem; }
+    .menu-item { display:flex; justify-content:space-between; padding:0.5rem 0; }
+    .btn { display:inline-block; margin:1rem 0; padding:0.75rem 1.5rem; background:#F2C1D1; color:#fff; text-decoration:none; font-weight:700; border-radius:4px; }
+    .payment-icons img { width:40px; margin:0 0.5rem; vertical-align:middle; }
+    footer { text-align:center; padding:1rem; background:#f8f8f8; }
+    [data-lang] { display:none; }
+    [lang="pt"] [data-lang="pt"] { display:block; }
+    [lang="en"] [data-lang="en"] { display:block; }
+    [lang="es"] [data-lang="es"] { display:block; }
+  </style>
+  <script>
+    function switchLang(lang) {
+      document.documentElement.lang = lang;
+    }
+  </script>
+</head>
+<body lang="pt">
+  <header>
+    <h1><a href="https://instagram.com/algodaodajuoficial" target="_blank" style="color:inherit; text-decoration:none;">@algodaodajuoficial</a></h1>
+    <div class="lang-switch">
+      <button onclick="switchLang('pt')">PT</button>
+      <button onclick="switchLang('en')">EN</button>
+      <button onclick="switchLang('es')">ES</button>
+    </div>
+    <nav>
+      <a href="#cardapio" data-lang="pt">Cardápio</a>
+      <a href="#pagamento" data-lang="pt">Pagamento</a>
+      <a href="#contato" data-lang="pt">Contato</a>
+      <a href="#cardapio" data-lang="en">Menu</a>
+      <a href="#pagamento" data-lang="en">Payment</a>
+      <a href="#contato" data-lang="en">Contact</a>
+      <a href="#cardapio" data-lang="es">Menú</a>
+      <a href="#pagamento" data-lang="es">Pago</a>
+      <a href="#contato" data-lang="es">Contacto</a>
+    </nav>
+  </header>  <section id="cardapio" class="container">
+    <h2 data-lang="pt">Cardápio Algodão da Ju</h2>
+    <h2 data-lang="en">Algodão da Ju Menu</h2>
+    <h2 data-lang="es">Menú Algodão da Ju</h2><h3 data-lang="pt">Algodão Doce</h3>
+<h3 data-lang="en">Cotton Candy</h3>
+<h3 data-lang="es">Algodón de Azúcar</h3>
+<div class="menu-item" data-lang="pt"><span>Algodão doce no palito</span><span>R$ 2,00</span></div>
+<div class="menu-item" data-lang="en"><span>Cotton candy stick</span><span>R$ 2.00</span></div>
+<div class="menu-item" data-lang="es"><span>Palo de algodón de azúcar</span><span>R$ 2,00</span></div>
+<!-- Continue para cada item seguindo o padrão: pt/en/es -->
+
+  </section>  <section id="pagamento" class="container">
+    <h2 data-lang="pt">Formas de Pagamento</h2>
+    <h2 data-lang="en">Payment Methods</h2>
+    <h2 data-lang="es">Métodos de Pago</h2>
+    <p data-lang="pt">Aceitamos diversos meios de pagamento:</p>
+    <p data-lang="en">We accept various payment methods:</p>
+    <p data-lang="es">Aceptamos varios métodos de pago:</p>
+    <div class="payment-icons">
+      <img src="https://img.icons8.com/ios-filled/50/000000/visa.png" alt="Visa">
+      <img src="https://img.icons8.com/ios-filled/50/000000/mastercard.png" alt="Mastercard">
+      <img src="https://img.icons8.com/ios-filled/50/000000/paypal.png" alt="PayPal">
+      <img src="https://img.icons8.com/ios-filled/50/000000/pix.png" alt="PIX">
+    </div>
+    <a href="#" class="btn" data-lang="pt">Pagar com PIX</a>
+    <a href="#" class="btn" data-lang="en">Pay with PIX</a>
+    <a href="#" class="btn" data-lang="es">Pagar con PIX</a>
+  </section>  <section id="contato" class="container">
+    <h2 data-lang="pt">Delivery e Contato</h2>
+    <h2 data-lang="en">Delivery & Contact</h2>
+    <h2 data-lang="es">Entrega y Contacto</h2>
+    <p data-lang="pt">Para pedidos e entrega, entre em contato via WhatsApp:</p>
+    <p data-lang="en">For orders and delivery, contact us via WhatsApp:</p>
+    <p data-lang="es">Para pedidos y entregas, contáctanos por WhatsApp:</p>
+    <a href="https://wa.me/5521991234567" class="btn" data-lang="pt">Chamar no WhatsApp</a>
+    <a href="https://wa.me/5521991234567" class="btn" data-lang="en">Chat on WhatsApp</a>
+    <a href="https://wa.me/5521991234567" class="btn" data-lang="es">Chatear en WhatsApp</a>
+  </section>  <footer>
+    <p>&copy; 2025 Algodão da Ju Oficial</p>
+  </footer>
+</body>
+</html>
