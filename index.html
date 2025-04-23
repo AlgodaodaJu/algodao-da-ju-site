@@ -20,54 +20,57 @@
     .btn { display:inline-block; margin:1rem 0; padding:0.75rem 1.5rem; background:#F2C1D1; color:#fff; text-decoration:none; font-weight:bold; border-radius:4px; }
     .payment-icons img { width:40px; margin:0 0.5rem; vertical-align:middle; }
     footer { text-align:center; padding:1rem; background:#f8f8f8; }
-    /* Tradução multilíngue usando body[lang] */
+    /* escondemos tudo por padrão */
     [data-lang] { display:none; }
-    body[lang="pt"] [data-lang="pt"] { display:block; }
-    body[lang="en"] [data-lang="en"] { display:block; }
-    body[lang="es"] [data-lang="es"] { display:block; }
   </style>
 </head>
 <body lang="pt">
   <script>
     function switchLang(lang) {
-      document.body.lang = lang; // atualiza atributo lang no body
+      document.body.lang = lang;                              // atualiza atributo lang no body 0
+      document.querySelectorAll('[data-lang]').forEach(el => { // percorre todos os elementos com data-lang 1
+        el.style.display = (el.getAttribute('data-lang') === lang) ? '' : 'none'; // show/hide 2
+      });
     }
+    document.addEventListener('DOMContentLoaded', () => switchLang('pt'));
   </script>
 
   <header>
-    <h1><a href="https://instagram.com/algodaodajuoficial" target="_blank" style="color:inherit;text-decoration:none;">@algodaodajuoficial</a></h1>
+    <h1>
+      <a href="https://instagram.com/algodaodajuoficial" target="_blank" style="color:inherit;text-decoration:none;">
+        @algodaodajuoficial
+      </a>
+    </h1>
     <div class="lang-switch">
       <button onclick="switchLang('pt')">PT</button>
       <button onclick="switchLang('en')">EN</button>
       <button onclick="switchLang('es')">ES</button>
     </div>
     <nav>
-      <a href="#cardapio" class="nav-link" data-lang="pt">Cardápio</a>
-      <a href="#pagamento" class="nav-link" data-lang="pt">Pagamento</a>
-      <a href="#contato" class="nav-link" data-lang="pt">Contato</a>
-      <a href="#cardapio" class="nav-link" data-lang="en">Menu</a>
-      <a href="#pagamento" class="nav-link" data-lang="en">Payment</a>
-      <a href="#contato" class="nav-link" data-lang="en">Contact</a>
-      <a href="#cardapio" class="nav-link" data-lang="es">Menú</a>
-      <a href="#pagamento" class="nav-link" data-lang="es">Pago</a>
-      <a href="#contato" class="nav-link" data-lang="es">Contacto</a>
+      <a href="#cardapio" data-lang="pt">Cardápio</a>
+      <a href="#pagamento" data-lang="pt">Pagamento</a>
+      <a href="#contato" data-lang="pt">Contato</a>
+      <a href="#cardapio" data-lang="en">Menu</a>
+      <a href="#pagamento" data-lang="en">Payment</a>
+      <a href="#contato" data-lang="en">Contact</a>
+      <a href="#cardapio" data-lang="es">Menú</a>
+      <a href="#pagamento" data-lang="es">Pago</a>
+      <a href="#contato" data-lang="es">Contacto</a>
     </nav>
   </header>
 
   <section id="cardapio" class="container">
-    <!-- Títulos -->
     <h2 data-lang="pt">Cardápio Algodão da Ju</h2>
     <h2 data-lang="en">Algodão da Ju Menu</h2>
     <h2 data-lang="es">Menú Algodão da Ju</h2>
 
-    <!-- Categoria Algodão Doce -->
     <h3 data-lang="pt">Algodão Doce</h3>
     <h3 data-lang="en">Cotton Candy</h3>
     <h3 data-lang="es">Algodón Dulce</h3>
     <div class="menu-item" data-lang="pt"><span>Algodão doce no palito</span><span>R$ 2,00</span></div>
-    <div class="menu-item" data-lang="en"><span>Cotton candy on a stick</span><span>R$ 2,00</span></div>
+    <div class="menu-item" data-lang="en"><span>Cotton candy on a stick</span><span>R$ 2.00</span></div>
     <div class="menu-item" data-lang="es"><span>Algodón dulce en palito</span><span>R$ 2,00</span></div>
-    <!-- (adicione todas as linhas de itens com data-lang para pt/en/es) -->
+    <!-- repita para todos os itens, cada um com 3 versões data-lang="pt","en","es" -->
   </section>
 
   <section id="pagamento" class="container">
