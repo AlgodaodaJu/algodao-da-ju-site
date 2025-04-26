@@ -1,89 +1,100 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html><html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Algodão da Ju Oficial</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
   <style>
-    body { font-family:'Montserrat',sans-serif; margin:0; padding:0; color:#333; }
-    header { background:#F2C1D1; padding:1rem; text-align:center; position:sticky; top:0; z-index:10; }
-    header h1 { margin:0; color:#fff; }
-    .lang-switch { position:absolute; top:1rem; right:1rem; }
-    .lang-switch button { margin-left:0.5rem; padding:0.25rem 0.5rem; background:#fff; border:none; border-radius:4px; cursor:pointer; }
-    nav { text-align:center; margin-top:0.5rem; }
-    nav a { margin:0 0.5rem; color:#fff; text-decoration:none; font-weight:bold; }
-    .container { max-width:960px; margin:2rem auto; padding:0 1rem; }
-    h2 { border-bottom:2px solid #F2C1D1; padding-bottom:0.5rem; }
-    h3 { margin-top:1rem; }
-    .menu-item { display:flex; justify-content:space-between; padding:0.5rem 0; }
-    .btn { display:inline-block; margin:1rem 0; padding:0.75rem 1.5rem; background:#F2C1D1; color:#fff; text-decoration:none; font-weight:bold; border-radius:4px; }
-    .payment-icons img { width:40px; margin:0 0.5rem; vertical-align:middle; }
-    footer { text-align:center; padding:1rem; background:#f8f8f8; }
-    [data-lang] { display:none; }
-    html[lang="pt"] [data-lang="pt"], html[lang="en"] [data-lang="en"], html[lang="es"] [data-lang="es"] { display:block; }
+    body{font-family:'Montserrat',sans-serif;margin:0;padding:0;color:#333}
+    header{background:#F2C1D1;padding:1rem;text-align:center;position:sticky;top:0;z-index:10}
+    header h1{margin:0;color:#fff}
+    .lang-switch{position:absolute;top:1rem;right:1rem}
+    .lang-switch button{margin-left:.5rem;padding:.25rem .5rem;background:#fff;border:none;border-radius:4px;cursor:pointer}
+    nav{text-align:center;margin-top:.5rem}
+    nav a{margin:0 .5rem;color:#fff;text-decoration:none;font-weight:700}
+    .container{max-width:960px;margin:2rem auto;padding:0 1rem}
+    h2{border-bottom:2px solid #F2C1D1;padding-bottom:.5rem}
+    h3{margin-top:1rem}
+    .menu-item{display:flex;justify-content:space-between;padding:.4rem 0}
+    .btn{display:inline-block;margin:1rem 0;padding:.75rem 1.5rem;background:#F2C1D1;color:#fff;text-decoration:none;font-weight:700;border-radius:4px}
+    .payment-icons img{width:40px;margin:0 .5rem;vertical-align:middle}
+    footer{text-align:center;padding:1rem;background:#f8f8f8}
+    [data-lang]{display:none}
+    html[lang="pt"] [data-lang="pt"],html[lang="en"] [data-lang="en"],html[lang="es"] [data-lang="es"]{display:block}
   </style>
 </head>
 <body>
   <header>
-    <h1><a href="https://instagram.com/algodaodajuoficial" target="_blank" style="color:#fff; text-decoration:none;">@algodaodajuoficial</a></h1>
+    <h1><a href="https://instagram.com/algodaodajuoficial" target="_blank" style="color:#fff;text-decoration:none">@algodaodajuoficial</a></h1>
     <div class="lang-switch">
       <button onclick="switchLang('pt')">PT</button>
       <button onclick="switchLang('en')">EN</button>
       <button onclick="switchLang('es')">ES</button>
     </div>
     <nav>
-      <a href="#cardapio" data-lang="pt">Cardápio</a><a href="#pagamento" data-lang="pt">Pagamento</a><a href="#contato" data-lang="pt">Contato</a>
-      <a href="#cardapio" data-lang="en">Menu</a><a href="#pagamento" data-lang="en">Payment</a><a href="#contato" data-lang="en">Contact</a>
-      <a href="#cardapio" data-lang="es">Menú</a><a href="#pagamento" data-lang="es">Pago</a><a href="#contato" data-lang="es">Contacto</a>
+      <a href="#cardapio" data-lang="pt">Cardápio</a>
+      <a href="#pagamento" data-lang="pt">Pagamento</a>
+      <a href="#contato" data-lang="pt">Contato</a>
+      <a href="#cardapio" data-lang="en">Menu</a>
+      <a href="#pagamento" data-lang="en">Payment</a>
+      <a href="#contato" data-lang="en">Contact</a>
+      <a href="#cardapio" data-lang="es">Menú</a>
+      <a href="#pagamento" data-lang="es">Pago</a>
+      <a href="#contato" data-lang="es">Contacto</a>
     </nav>
   </header>  <section id="cardapio" class="container">
     <h2 data-lang="pt">Cardápio Algodão da Ju</h2>
     <h2 data-lang="en">Algodão da Ju Menu</h2>
-    <h2 data-lang="es">Menú Algodão da Ju</h2><h3 data-lang="pt">Algodão Doce</h3>
+    <h2 data-lang="es">Menú Algodão da Ju</h2><!-- ALGODÃO DOCE -->
+<h3 data-lang="pt">Algodão Doce</h3>
 <h3 data-lang="en">Cotton Candy</h3>
 <h3 data-lang="es">Algodón Dulce</h3>
+
+<!-- item template: PT / EN / ES -->
 <div class="menu-item" data-lang="pt"><span>Algodão doce no palito</span><span>R$ 2,00</span></div>
 <div class="menu-item" data-lang="en"><span>Cotton candy on a stick</span><span>R$ 2.00</span></div>
 <div class="menu-item" data-lang="es"><span>Algodón dulce en palito</span><span>R$ 2,00</span></div>
 
 <div class="menu-item" data-lang="pt"><span>Algodão doce sem palito (saquinho)</span><span>R$ 2,00</span></div>
-<div class="menu-item" data-lang="en"><span>Cotton candy in bag</span><span>R$ 2.00</span></div>
-<div class="menu-item" data-lang="es"><span>Algodón dulce en bolsa</span><span>R$ 2,00</span></div>
+<div class="menu-item" data-lang="en"><span>Cotton candy bag</span><span>R$ 2.00</span></div>
+<div class="menu-item" data-lang="es"><span>Bolsa de algodón dulce</span><span>R$ 2,00</span></div>
 
 <div class="menu-item" data-lang="pt"><span>Algodão doce no pote (250 ml)</span><span>R$ 2,00</span></div>
-<div class="menu-item" data-lang="en"><span>Cotton candy in cup (250 ml)</span><span>R$ 2.00</span></div>
-<div class="menu-item" data-lang="es"><span>Algodón dulce en vaso (250 ml)</span><span>R$ 2,00</span></div>
+<div class="menu-item" data-lang="en"><span>Cotton candy cup (250 ml)</span><span>R$ 2.00</span></div>
+<div class="menu-item" data-lang="es"><span>Vaso de algodón dulce (250 ml)</span><span>R$ 2,00</span></div>
 
 <div class="menu-item" data-lang="pt"><span>Algodão doce no pote (400 ml)</span><span>R$ 2,50</span></div>
-<div class="menu-item" data-lang="en"><span>Cotton candy in cup (400 ml)</span><span>R$ 2.50</span></div>
-<div class="menu-item" data-lang="es"><span>Algodón dulce en vaso (400 ml)</span><span>R$ 2,50</span></div>
+<div class="menu-item" data-lang="en"><span>Cotton candy cup (400 ml)</span><span>R$ 2.50</span></div>
+<div class="menu-item" data-lang="es"><span>Vaso de algodón dulce (400 ml)</span><span>R$ 2,50</span></div>
 
 <div class="menu-item" data-lang="pt"><span>Algodão doce no copão (770 ml)</span><span>R$ 2,50</span></div>
-<div class="menu-item" data-lang="en"><span>Cotton candy in large cup (770 ml)</span><span>R$ 2.50</span></div>
-<div class="menu-item" data-lang="es"><span>Algodón dulce en vaso grande (770 ml)</span><span>R$ 2,50</span></div>
+<div class="menu-item" data-lang="en"><span>Cotton candy large cup (770 ml)</span><span>R$ 2.50</span></div>
+<div class="menu-item" data-lang="es"><span>Vaso grande de algodón dulce (770 ml)</span><span>R$ 2,50</span></div>
 
 <div class="menu-item" data-lang="pt"><span>Algodão doce c/ marshmallow (250 ml)</span><span>R$ 3,00</span></div>
-<div class="menu-item" data-lang="en"><span>Cotton candy with marshmallow (250 ml)</span><span>R$ 3.00</span></div>
-<div class="menu-item" data-lang="es"><span>Algodón dulce con malvavisco (250 ml)</span><span>R$ 3,00</span></div>
+<div class="menu-item" data-lang="en"><span>Cotton candy w/ marshmallow (250 ml)</span><span>R$ 3.00</span></div>
+<div class="menu-item" data-lang="es"><span>Algodón dulce con malvavisco (250 ml)</span><span>R$ 3,00</span></div>
 
 <div class="menu-item" data-lang="pt"><span>Algodão doce na casquinha</span><span>R$ 2,00</span></div>
-<div class="menu-item" data-lang="en"><span>Cotton candy in cone</span><span>R$ 2.00</span></div>
-<div class="menu-item" data-lang="es"><span>Algodón dulce en cono</span><span>R$ 2,00</span></div>
+<div class="menu-item" data-lang="en"><span>Cotton candy cone</span><span>R$ 2.00</span></div>
+<div class="menu-item" data-lang="es"><span>Cono de algodón dulce</span><span>R$ 2,00</span></div>
 
 <div class="menu-item" data-lang="pt"><strong>Árvore de algodão doce (50 un.)</strong><span>R$ 125,00</span></div>
 <div class="menu-item" data-lang="en"><strong>Cotton candy tree (50 units)</strong><span>R$ 125.00</span></div>
-<div class="menu-item" data-lang="es"><strong>Árbol de algodón dulce (50 unidades)</strong><span>R$ 125,00</span></div>
+<div class="menu-item" data-lang="es"><strong>Árbol de algodón dulce (50 un.)</strong><span>R$ 125,00</span></div>
 
+<!-- MAÇÃ DO AMOR & OUTROS -->
 <h3 data-lang="pt">Maçã do Amor & Outros</h3>
 <h3 data-lang="en">Candied Apple & Others</h3>
 <h3 data-lang="es">Manzana de Caramelo y Otros</h3>
 
+<!-- Cada item traduzido -->
 <div class="menu-item" data-lang="pt"><span>Maçã do amor (pequena)</span><span>R$ 2,00</span></div>
 <div class="menu-item" data-lang="en"><span>Candied apple (small)</span><span>R$ 2.00</span></div>
 <div class="menu-item" data-lang="es"><span>Manzana de caramelo (pequeña)</span><span>R$ 2,00</span></div>
 
 <div class="menu-item" data-lang="pt"><span>Maçã do amor (pequena) c/ adesivo 3D</span><span>R$ 2,50</span></div>
-<div class="menu-item" data-lang="en"><span>Candied apple (small) with 3D sticker</span><span>R$ 2.50</span></div>
+<div class="menu-item" data-lang="en"><span>Candied apple (small) w/ 3D sticker</span><span>R$ 2.50</span></div>
 <div class="menu-item" data-lang="es"><span>Manzana de caramelo (pequeña) con adhesivo 3D</span><span>R$ 2,50</span></div>
 
 <div class="menu-item" data-lang="pt"><span>Maçã do amor (grande)</span><span>R$ 4,00</span></div>
@@ -91,73 +102,8 @@
 <div class="menu-item" data-lang="es"><span>Manzana de caramelo (grande)</span><span>R$ 4,00</span></div>
 
 <div class="menu-item" data-lang="pt"><span>Maçã do amor (grande) c/ adesivo 3D</span><span>R$ 4,50</span></div>
-<div class="menu-item" data-lang="en"><span>Candied apple (large) with 3D sticker</span><span>R$ 4.50</span></div>
+<div class="menu-item" data-lang="en"><span>Candied apple (large) w/ 3D sticker</span><span>R$ 4.50</span></div>
 <div class="menu-item" data-lang="es"><span>Manzana de caramelo (grande) con adhesivo 3D</span><span>R$ 4,50</span></div>
 
-<div class="menu-item" data-lang="pt"><span>Chocomaçã (pequena)</span><span>3,00</span></div>
-<div class="menu-item" data-lang="en"><span>Chocolate-dipped apple (small)</span><span>R$ 3.00</span></div>
-<div class="menu-item" data-lang="es"><span>Manzana cubierta de chocolate (pequeña)</span><span>R$ 3,00</span></div>
+<div class="menu-item" data-lang="pt"><span>Chocomaçã (pequena)</span><span
 
-<div class="menu-item" data-lang="pt"><span>Chocomaçã (grande)</span><span>R$ 4,00</span></div>
-<div class="menu-item" data-lang="en"><span>Chocolate-dipped apple (large)</span><span>R$ 4.00</span></div>
-<div class="menu-item" data-lang="es"><span>Manzana cubierta de chocolate (grande)</span><span>R$ 4,00</span></div>
-
-<div class="menu-item" data-lang="pt"><span>Pirulito de chocolate preto</span><span>R$ 2,00</span></div>
-<div class="menu-item" data-lang="en"><span>Dark chocolate lollipop</span><span>R$ 2.00</span></div>
-<div class="menu-item" data-lang="es"><span>Paleta de chocolate negro</span><span>R$ 2,00</span></div>
-
-<div class="menu-item" data-lang="pt"><span>Pirulito de chocolate branco ou colorido</span><span>R$ 2,50</span></div>
-<div class="menu-item" data-lang="en"><span>White or colored chocolate lollipop</span><span>R$ 2.50</span></div>
-<div class="menu-item" data-lang="es"><span>Paleta de chocolate blanco o colorido</span><span>R$ 2,50</span></div>
-
-<div class="menu-item" data-lang="pt"><span>Pipoca doce colorida</span><span>R$ 1,50</span></div>
-<div class="menu-item" data-lang="en"><span>Colored sweet popcorn</span><span>R$ 1.50</span></div>
-<div class="menu-item" data-lang="es"><span>Palomitas dulces de colores</span><span>R$ 1,50</span></div>
-
-<div class="menu-item" data-lang="pt"><span>Pipoca salgada</span><span>R$ 1,20</span></div>
-<div class="menu-item" data-lang="en"><span>Savory popcorn</span><span>R$ 1.20</span></div>
-<div class="menu-item" data-lang="es"><span>Palomitas saladas</span><span>R$ 1,20</span></div>
-
-<div class="menu-item" data-lang="pt"><span>Cento de docinhos simples</span><span>R$ 70,00</span></div>
-<div class="menu-item" data-lang="en"><span>100 simple sweets</span><span>R$ 70.00</span></div>
-<div class="menu-item" data-lang="es"><span>Cien dulces sencillos</span><span>R$ 70,00</span></div>
-
-<div class="menu-item" data-lang="pt"><span>Mini cone trufado</span><span>R$ 3,00</span></div>
-<div class="menu-item" data-lang="en"><span>Mini truffle cone</span><span>R$ 3.00</span></div>
-<div class="menu-item" data-lang="es"><span>Mini cono trufado</span><span>R$ 3,00</span></div>
-
-<div class="menu-item" data-lang="pt"><span>Trufa de chocolate preto</span><span>R$ 1,20</span></div>
-<div class="menu-item" data-lang="en"><span>Dark chocolate truffle</span><span>R$ 1.20</span></div>
-<div class="menu-item" data-lang="es"><span>Trufa de chocolate negro</span><span>R$ 1,20</span></div>
-
-<div class="menu-item" data-lang="pt"><span>Trufa de chocolate branco ou colorido</span><span>R$ 1,50</span></div>
-<div class="menu-item" data-lang="en"><span>White or colored chocolate truffle</span><span>R$ 1.50</span></div>
-<div class="menu-item" data-lang="es"><span>Trufa de chocolate blanco o colorido</span><span>R$ 1,50</span></div>
-
-<div class="menu-item" data-lang="pt"><span>Bala de coco caramelizada</span><span>R$ 1,50</span></div>
-<div class="menu-item" data-lang="en"><span>Caramelized coconut candy</span><span>R$ 1.50</span></div>
-<div class="menu-item" data-lang="es"><span>Caramelo de coco caramelizado</span><span>R$ 1,50</span></div>
-
-<div class="menu-item" data-lang="pt"><span>Bombonzão de chocolate preto c/ bastante recheio</span><span>R$ 3,00</span></div>
-<div class="menu-item" data-lang="en"><span>Large dark chocolate bonbon with extra filling</span><span>R$ 3.00</span></div>
-<div class="menu-item" data-lang="es"><span>Bombón grande de chocolate negro con mucho relleno</span><span>R$ 3,00</span></div>
-
-<div class="menu-item" data-lang="pt"><span>Pirulito de cristal</span><span>R$ 4,00</span></div>
-<div class="menu-item" data-lang="en"><span>Crystal lollipop</span><span>R$ 4.00</span></div>
-<div class="menu-item" data-lang="es"><span>Paleta cristal</span><span>R$ 4,00</span></div>
-
-  </section>  <!-- Seções pagamento e contato -->  <section id="pagamento" class="container">...
-  </section>
-  <section id="contato" class="container">...
-  </section>  <footer>
-    <p>&copy; 2025 Algodão da Ju Oficial</p>
-  </footer>  <script>
-    function switchLang(lang) {
-      document.documentElement.setAttribute('lang', lang);
-      document.querySelectorAll('[data-lang]').forEach(el => {
-        el.style.display = (el.getAttribute('data-lang') === lang) ? '' : 'none';
-      });
-    }
-    document.addEventListener('DOMContentLoaded', () => switchLang('pt'));
-  </script></body>
-</html>
