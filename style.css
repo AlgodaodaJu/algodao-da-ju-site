@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #F2C1D1;
+  --text-color: #333;
+  --background: #fff;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background: var(--background);
+}
+header {
+  background: var(--primary-color);
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  color: #fff;
+}
+.lang-switch {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.lang-switch button {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+nav a {
+  margin: 0 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h2 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.menu-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+.btn {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.payment-icons img {
+  width: 40px;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f8f8f8;
+}
+[data-lang] { display: none; }
+html[lang="pt"] [data-lang="pt"],
+html[lang="en"] [data-lang="en"],
+html[lang="es"] [data-lang="es"] {
+  display: block;
+}
