@@ -190,6 +190,11 @@ html[lang="es"] [data-lang="es"] {
   width: 100%;
   border-radius: 8px;
 }
+.summary-item .item-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .summary-arrow {
   position: absolute;
   top: 50%;
