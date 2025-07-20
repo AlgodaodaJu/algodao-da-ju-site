@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.summary-item').forEach(item => {
     item.style.cursor = 'pointer';
     item.addEventListener('click', () => {
-      const text = item.querySelector('p').textContent;
-      const [namePart, pricePart] = text.split(' - ');
+      const namePart = item.querySelector('.item-name').textContent;
+      const pricePart = item.querySelector('.price').textContent;
       const price = pricePart.replace('R$ ', '').replace(',', '.');
       window.location.href = `produto.html?name=${encodeURIComponent(namePart)}&price=${encodeURIComponent(price)}`;
     });
@@ -30,4 +30,8 @@ function scrollSummary(dir) {
   if (!carousel) return;
   const cardWidth = carousel.querySelector('.summary-item').offsetWidth + 16;
   carousel.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
+}
+
+if (typeof module !== 'undefined') {
+  module.exports = { switchLang };
 }
