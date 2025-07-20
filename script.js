@@ -15,3 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('mobile');
   }
 });
+function scrollSummary(dir) {
+  const carousel = document.getElementById('summary-carousel');
+  if (!carousel) return;
+  const cardWidth = carousel.querySelector('.summary-item').offsetWidth + 16;
+  carousel.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
+}
