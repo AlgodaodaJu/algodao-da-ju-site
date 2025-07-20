@@ -11,12 +11,12 @@
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
-      gap: 1rem;
+      gap: 1.5rem;
       padding: 1rem;
     }
     .windows-card {
       flex: 0 0 auto;
-      width: 200px;
+      width: 300px;
       scroll-snap-align: start;
       position: relative;
       border-radius: 8px;
@@ -74,7 +74,7 @@
   <script>
     function scrollCarousel(direction) {
       const carousel = document.getElementById('carousel');
-      const cardWidth = carousel.querySelector('.windows-card').offsetWidth + 16; // width + gap
+      const cardWidth = carousel.querySelector('.windows-card').offsetWidth + 24; // width + gap
       carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
     }
   </script>
