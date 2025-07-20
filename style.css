@@ -1,3 +1,31 @@
+/* Font definitions */
+@font-face {
+  font-family: "Hagrid Text Heavy";
+  src: url("fonts/hagrid/HagridTextHeavy.woff2") format("woff2"),
+       url("fonts/hagrid/HagridTextHeavy.woff") format("woff"),
+       url("fonts/hagrid/HagridTextHeavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Codec Pro";
+  src: url("fonts/hagrid/CodecPro.woff2") format("woff2"),
+       url("fonts/hagrid/CodecPro.woff") format("woff"),
+       url("fonts/hagrid/CodecPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Codec Pro ExtraBold";
+  src: url("fonts/hagrid/CodecProExtraBold.woff2") format("woff2"),
+       url("fonts/hagrid/CodecProExtraBold.woff") format("woff"),
+       url("fonts/hagrid/CodecProExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --primary-color: #F2C1D1;
   --text-color: #333;
