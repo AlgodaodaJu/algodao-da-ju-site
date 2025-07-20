@@ -170,3 +170,39 @@ html[lang="es"] [data-lang="es"] {
   padding: 0.5rem;
   font-size: 0.9rem;
 }
+.summary-wrapper {
+  position: relative;
+}
+.summary-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.summary-item {
+  flex: 0 0 auto;
+  width: 150px;
+  scroll-snap-align: start;
+  text-align: center;
+}
+.summary-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+.summary-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.summary-arrow.left { left: -1rem; }
+.summary-arrow.right { right: -1rem; }
