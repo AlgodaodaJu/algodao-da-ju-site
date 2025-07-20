@@ -116,7 +116,7 @@ html[lang="es"] [data-lang="es"] {
 .menu-card {
   background: #fff;
   border: 1px solid #eee;
-  border-radius: 100px;
+  border-radius: 50px;
   padding: 0.5rem;
   width: 100%;
   text-align: center;
@@ -127,7 +127,7 @@ html[lang="es"] [data-lang="es"] {
   width: 100%;
   height: 120px;
   object-fit: cover;
-  border-radius: 100px;
+  border-radius: 50px;
 }
 .menu-card h4 {
   margin: 0.5rem 0;
