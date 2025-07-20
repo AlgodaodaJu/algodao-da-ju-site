@@ -21,6 +21,15 @@
       position: relative;
       border-radius: 8px;
       overflow: hidden;
+      opacity: 0;
+      animation: windowsFade 0.6s forwards ease;
+    }
+    .windows-card:nth-child(1) { animation-delay: 0.1s; }
+    .windows-card:nth-child(2) { animation-delay: 0.2s; }
+    .windows-card:nth-child(3) { animation-delay: 0.3s; }
+    @keyframes windowsFade {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .windows-card img {
       width: 100%;
