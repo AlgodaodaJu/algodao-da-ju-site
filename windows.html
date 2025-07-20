@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windows Showcase</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Simple horizontal cards layout inspired by the provided reference */
+    .windows-carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .windows-card {
+      flex: 0 0 auto;
+      width: 200px;
+      scroll-snap-align: start;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .windows-card img {
+      width: 100%;
+      display: block;
+    }
+    .windows-card a {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      text-indent: -9999px;
+    }
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+    }
+    .carousel-arrow.right { right: 0.5rem; }
+    .carousel-arrow.left { left: 0.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Windows Carousel</h1>
+  </header>
+  <div class="windows-carousel" id="carousel">
+    <div class="windows-card">
+      <img src="https://picsum.photos/seed/gachiakuta/400/200" alt="Gachiakuta">
+      <a href="/pt-br/series/GP5HJ84P7/gachiakuta">Gachiakuta</a>
+    </div>
+    <div class="windows-card">
+      <img src="https://picsum.photos/seed/example1/400/200" alt="Example 1">
+      <a href="#">Example 1</a>
+    </div>
+    <div class="windows-card">
+      <img src="https://picsum.photos/seed/example2/400/200" alt="Example 2">
+      <a href="#">Example 2</a>
+    </div>
+    <button class="carousel-arrow left" onclick="scrollCarousel(-1)">&#9664;</button>
+    <button class="carousel-arrow right" onclick="scrollCarousel(1)">&#9654;</button>
+  </div>
+
+  <script>
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById('carousel');
+      const cardWidth = carousel.querySelector('.windows-card').offsetWidth + 16; // width + gap
+      carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
