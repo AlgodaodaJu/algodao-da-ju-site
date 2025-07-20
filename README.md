@@ -16,3 +16,12 @@ Esses arquivos não estão inclusos no repositório por questões de licença. C
 
 Adicionamos a página `hagrid-test.html` para visualizar a família de fontes **Hagrid**.
 Abra o arquivo em um navegador e confira o texto exibido com a fonte carregada de [Zetafonts](https://www.zetafonts.com/hagrid).
+
+## Executando testes
+
+Instale as dependências do projeto e rode os testes automatizados com:
+
+```bash
+npm install
+npm test
+```
