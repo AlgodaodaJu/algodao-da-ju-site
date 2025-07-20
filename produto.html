@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produto | Algodão da Ju</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="https://instagram.com/algodaodajuoficial" target="_blank" style="color:#fff; text-decoration:none;">@algodaodajuoficial</a></h1>
+    <div class="lang-switch">
+      <button onclick="switchLang('pt')">PT</button>
+      <button onclick="switchLang('en')">EN</button>
+      <button onclick="switchLang('es')">ES</button>
+    </div>
+    <nav>
+      <a href="index.html" data-lang="pt">Início</a>
+      <a href="index.html" data-lang="en">Home</a>
+      <a href="index.html" data-lang="es">Inicio</a>
+      <a href="cardapio.html" data-lang="pt">Cardápio</a>
+      <a href="cardapio.html" data-lang="en">Menu</a>
+      <a href="cardapio.html" data-lang="es">Menú</a>
+      <a href="pagamento.html" data-lang="pt">Pagamento</a>
+      <a href="pagamento.html" data-lang="en">Payment</a>
+      <a href="pagamento.html" data-lang="es">Pago</a>
+      <a href="contato.html" data-lang="pt">Contato</a>
+      <a href="contato.html" data-lang="en">Contact</a>
+      <a href="contato.html" data-lang="es">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="produto" class="container">
+    <h2 id="prod-name"></h2>
+    <img id="prod-img" alt="" style="width:200px; height:200px; border-radius:4px;" />
+    <p id="prod-price" style="font-size:1.2rem; font-weight:bold;"></p>
+    <a id="pay-link" class="btn" target="_blank">Pagar no BoleCode</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Algodão da Ju Oficial</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="produto.js"></script>
+</body>
+</html>
