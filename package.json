@@ -1,0 +1,17 @@
+{
+  "name": "algodao-da-ju-site",
+  "version": "1.0.0",
+  "description": "Site oficial do Algodão da Ju com páginas independentes para cardápio, pagamento e contato. Todas as páginas suportam três idiomas e exibem imagens ilustrativas dos produtos.",
+  "main": "produto.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.0.4",
+    "jest-environment-jsdom": "^30.0.4"
+  }
+}
