@@ -8,7 +8,7 @@ function switchLang(lang) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const stored = localStorage.getItem('lang') || 'pt';
- switchLang(stored);
+  switchLang(stored);
 
   const ua = navigator.userAgent || navigator.vendor || window.opera;
   if (/android/i.test(ua) || /iPad|iPhone|iPod/.test(ua)) {
