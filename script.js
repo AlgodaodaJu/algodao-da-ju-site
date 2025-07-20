@@ -21,3 +21,7 @@ function scrollSummary(dir) {
   const cardWidth = carousel.querySelector('.summary-item').offsetWidth + 16;
   carousel.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
 }
+
+if (typeof module !== 'undefined') {
+  module.exports = { switchLang };
+}
