@@ -1,5 +1,36 @@
 /* Font definitions */
 @font-face {
+  font-family: 'Hagrid';
+  src: url('fonts/Hagrid/Hagrid.woff2') format('woff2'),
+       url('fonts/Hagrid/Hagrid.woff') format('woff'),
+       url('fonts/Hagrid/Hagrid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.menu-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.grid img {
+  width: 100%;
+  display: block;
+}
+
+.grid figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@font-face {
   font-family: "Hagrid Text Heavy";
   src: url("fonts/hagrid/HagridTextHeavy.woff2") format("woff2"),
        url("fonts/hagrid/HagridTextHeavy.woff") format("woff"),
@@ -211,33 +242,3 @@ html[lang="es"] [data-lang="es"] {
 }
 .summary-arrow.left { left: -1rem; }
 .summary-arrow.right { right: -1rem; }
-@font-face {
-  font-family: 'Hagrid';
-  src: url('fonts/Hagrid/Hagrid.woff2') format('woff2'),
-       url('fonts/Hagrid/Hagrid.woff') format('woff'),
-       url('fonts/Hagrid/Hagrid.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.menu-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-}
-
-.grid img {
-  width: 100%;
-  display: block;
-}
-
-.grid figcaption {
-  text-align: center;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-}
