@@ -25,3 +25,7 @@ Instale as dependências do projeto e rode os testes automatizados com:
 npm install
 npm test
 ```
+
+## Roteiro de importação
+
+Consulte o arquivo [`docs/roteiro-git.md`](docs/roteiro-git.md) para um passo a passo de como importar imagens, vídeos e fontes do repositório **GitHub-Arquivos**.
