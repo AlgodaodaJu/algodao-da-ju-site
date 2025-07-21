@@ -35,3 +35,22 @@ function scrollSummary(dir) {
 if (typeof module !== 'undefined') {
   module.exports = { switchLang };
 }
+const produtos = [
+  'bolo-laranja.jpg',
+  'brigadeiro-gourmet.jpg',
+  'cookie-redvelvet.jpg'
+];
+
+const grid = document.querySelector('#produtos .grid');
+
+produtos.forEach(nome => {
+  const fig = document.createElement('figure');
+  const img = document.createElement('img');
+  img.src = 'assets/images/produtos/' + nome;
+  img.alt = nome.replace(/[-.]/g, ' ');
+  const cap = document.createElement('figcaption');
+  cap.textContent = img.alt;
+  fig.appendChild(img);
+  fig.appendChild(cap);
+  grid.appendChild(fig);
+});
