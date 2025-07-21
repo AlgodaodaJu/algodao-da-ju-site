@@ -8,6 +8,8 @@
 | Pastas `Hagrid-Family-Trial-License-#65883` e `Trial` | `fonts/Hagrid/` | manter `*.ttf`/`*.otf` |
 | `index.html` do repositório **GitHub-Arquivos** | **Ignorar** | já existe no projeto |
 
+Se a pasta `assets/images/produtos` já contiver imagens antigas, remova-as antes de mover as novas fotos para evitar conflitos.
+
 ---
 
 ## 2. Roteiro Git (máx. 8 linhas)
@@ -16,7 +18,7 @@
 git clone git@github.com:seuusuario/algodao-da-ju-site.git && cd algodao-da-ju-site
 git remote add arquivos https://github.com/AlgodaodaJu/GitHub-Arquivos.git
 git fetch arquivos
-git checkout arquivos/main -- .
+git checkout arquivos/main -- . ':!index.html'
 mkdir -p assets/images/menu assets/images/produtos assets/videos fonts/Hagrid
 git mv "Cardápio Algodao da Ju.jpg" assets/images/menu/cardapio-algodao-da-ju.jpg
 git mv *.jpg assets/images/produtos/ && git mv *.mp4 assets/videos/ && git mv Hagrid-Family-Trial-License-#65883 Trial fonts/Hagrid/
