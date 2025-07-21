@@ -14,7 +14,7 @@
 
 ```bash
 git clone git@github.com:seuusuario/algodao-da-ju-site.git && cd algodao-da-ju-site
-git remote add arquivos <URL-do-repo-GitHub-Arquivos>
+git remote add arquivos https://github.com/AlgodaodaJu/GitHub-Arquivos.git
 git fetch arquivos
 git checkout arquivos/main -- .
 mkdir -p assets/images/menu assets/images/produtos assets/videos fonts/Hagrid
